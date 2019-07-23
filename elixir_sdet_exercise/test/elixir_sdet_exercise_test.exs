@@ -82,7 +82,7 @@ defmodule ElixirSdetExerciseTest do
       # refutes that sign-up did not navigate to a new page.
       refute page_title() == "Facebook - Log In or Sign Up"
     rescue
-      _e -> take_screenshot("../../screenshots/Wrong_Data_At_Sign_Up.png")
+      _e -> take_screenshot("../../screenshots/Wrong_EmailConf_At_Sign_Up.png")
     end
   end
 
