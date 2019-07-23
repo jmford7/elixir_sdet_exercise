@@ -1,0 +1,13 @@
+*Used Chromedriver v75 - make sure to manually start driver service and leave running prior to running any tests.
+
+*All Testing utilize the same setup: Navigate_to , IO.inspect , Maximize_window. Recommend refactoring to use a single function.
+This will simplify testing and make future changes/ additions easier and more reliable.
+
+*Two test blocks are essentially the same code, given different information to create two different errors. 
+Recommend use of a page object (or equivalent) to turn code into a single function different varibles can be passed into.
+
+*Screenshots should only be taken during each test block after an :error occurs. Test errors however, no longer print to the console.
+To confirm, modify refute -> assert, and vice versa. Screenshots are directed to save in the designated "screenshots" folder.
+
+*Hard coded sleeps to ensure Facebook had enough time to load errors. Was not able to find a 'waitforelement' equivalent
+function through an existing library. Recommend removing hard sleeps and replacing with a flexible wait to increase test speed.
