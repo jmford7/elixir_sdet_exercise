@@ -1,12 +1,12 @@
 # First Name (More than 1 char)
 ({:css, "input[name='firstname']"}, "U#1two")
 # Valid - Jus
-# Invalid - U#1two
+# Invalid - Tom
 
 # Last Name (More than 1 char)
 ({:css, "input[name='lastname']"}, "U#1two")
 # Valid - For
-# Invalid - U#1two
+# Invalid - Riddle
 
 # Mobile / Email
 ({:css, "input[name='reg_email__']"}, "tst4ct7@gmail.com")
